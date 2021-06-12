@@ -25,7 +25,8 @@ footer {
 }
 @keyframes move-up {
   0% { transform: translate(0,-10px); }
-  90% { transform: translate(0,-20px); }
+  20% { transform: translate(0,-20px); }
+  95% { transform: translate(0,-20px); }
   100% { transform: translate(0,-10px); }
 }
 

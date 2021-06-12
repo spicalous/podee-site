@@ -45,27 +45,39 @@ footer {
 
 @keyframes appear-one {
   0% { stroke-dasharray: 0 100; }
+  10% { stroke-dasharray: 20 100; }
   20% { stroke-dasharray: 20 100; }
+  30% { stroke-dasharray: 60 100; }
   40% { stroke-dasharray: 60 100; }
+  50% { stroke-dasharray: 70 100; }
   60% { stroke-dasharray: 70 100; }
+  70% { stroke-dasharray: 25 100; }
   80% { stroke-dasharray: 25 100; }
   100% { stroke-dasharray: 0 100; }
 }
 
 @keyframes appear-two {
   0% { stroke-dasharray: 0 100; }
+  10% { stroke-dasharray: 70 100; }
   20% { stroke-dasharray: 70 100; }
+  30% { stroke-dasharray: 65 100; }
   40% { stroke-dasharray: 65 100; }
+  50% { stroke-dasharray: 35 100; }
   60% { stroke-dasharray: 35 100; }
+  70% { stroke-dasharray: 60 100; }
   80% { stroke-dasharray: 60 100; }
   100% { stroke-dasharray: 0 100; }
 }
 
 @keyframes appear-three {
   0% { stroke-dasharray: 0 100; }
+  10% { stroke-dasharray: 60 100; }
   20% { stroke-dasharray: 60 100; }
+  30% { stroke-dasharray: 70 100; }
   40% { stroke-dasharray: 70 100; }
+  50% { stroke-dasharray: 20 100; }
   60% { stroke-dasharray: 20 100; }
+  70% { stroke-dasharray: 40 100; }
   80% { stroke-dasharray: 40 100; }
   100% { stroke-dasharray: 0 100; }
 }

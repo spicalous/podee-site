@@ -15,12 +15,36 @@
            class="form-control"
            id="input-email"
            placeholder="name@example.com">
+    <div class="invalid-feedback">
+      Please enter either email or telephone number
+    </div>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+    <label for="input-email"
+           class="form-label">Telephone</label>
+    <input type="tel"
+           class="form-control"
+           id="input-tel"
+           placeholder="Telephone">
+    <div class="invalid-feedback">
+      Please enter either email or telephone number
+    </div>
   </div>
 </div>
 <div class="row mb-3">
   <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 d-flex justify-content-end">
-    <button type="button" class="btn btn-outline-light">
+    <button type="button"
+            class="btn btn-outline-light"
+            id="btn-submit">
       Sign up
     </button>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+    <div class="alert invisible" role="alert" id="sign-up-alert">
+    </div>
   </div>
 </div>

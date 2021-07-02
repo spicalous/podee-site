@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Podee
+includeJS: true
 ---
 <div class="container text-white">
   <div class="row text-center">
@@ -10,4 +11,7 @@ title: Podee
     </div>
   </div>
   {% include sign-up-form.html %}
+  <script>
+    document.querySelector('#input-full-name').focus();
+  </script>
 </div>

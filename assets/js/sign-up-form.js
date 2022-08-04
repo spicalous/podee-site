@@ -30,7 +30,7 @@
       }).catch(function(error) {
         signUpAlert.classList.add('alert-danger');
         signUpAlert.classList.remove('invisible');
-        signUpAlert.innerText = 'Failed to submit request! Please email info@podee.app.';
+        signUpAlert.innerText = 'Something went wrong :( Please email info@podee.app';
       });
     } else {
       inputEmail.classList.add('is-invalid');

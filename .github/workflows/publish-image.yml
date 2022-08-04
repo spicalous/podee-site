@@ -25,9 +25,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       - name: Build site
-        uses: helaili/jekyll-action@2.0.5
+        uses: helaili/jekyll-action@2.4.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           build_only: true
       - name: Build container image
         run: docker build -t registry.digitalocean.com/container-registry-bl/epos-site:$(echo ${{ github.event.inputs.tag }}) .

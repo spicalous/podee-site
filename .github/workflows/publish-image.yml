@@ -27,7 +27,7 @@ jobs:
       - name: Build site
         uses: helaili/jekyll-action@2.4.0
         with:
-          target_path: /
+          build_dir: /site
           build_only: true
       - name: Build container image
         run: docker build -t registry.digitalocean.com/container-registry-bl/epos-site:$(echo ${{ github.event.inputs.tag }}) .

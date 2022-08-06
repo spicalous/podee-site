@@ -23,14 +23,20 @@
         body: JSON.stringify({ name, email, phoneNumber })
       };
 
-      fetch('https://manager.podee.app/api/sign-up', options).then(function(response) {
-        signUpAlert.classList.add('alert-primary');
-        signUpAlert.classList.remove('invisible');
-        signUpAlert.innerText = 'Thanks for signing up! Someone will contact you shortly.';
+      fetch('/epos-manager-service/api/sign-up', options).then(function(response) {
+        if (response.ok) {
+          signUpAlert.classList.add('alert-primary');
+          signUpAlert.classList.remove('invisible');
+          signUpAlert.innerText = 'Thanks for signing up! We will contact you shortly 😌';
+        } else {
+          let status = response && response.status || 'unknown';
+          throw new Error('Response not ok status=' + response.status)
+        }
       }).catch(function(error) {
+        console.error(error);
         signUpAlert.classList.add('alert-danger');
         signUpAlert.classList.remove('invisible');
-        signUpAlert.innerText = 'Something went wrong :( Please email info@podee.app';
+        signUpAlert.innerText = 'Something went wrong 😣 Please email info@podee.app';
       });
     } else {
       inputEmail.classList.add('is-invalid');
